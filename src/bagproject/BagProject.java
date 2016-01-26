@@ -15,9 +15,37 @@ public class BagProject {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
-        TestIntegerBag();
-        
+        LinkedBag myBag = new LinkedBag();    
+        myBag.add("test");
+        myBag.add("a");
+        myBag.add("is");
+        myBag.add("this");
+
+        myBag.remove();
+        myBag.remove();
+        myBag.remove();
+        myBag.remove();
+        myBag.remove();
+    }
+    
+    
+    
+    
+    
+    
+    
+    public static void TestStringBag(){
+       Bag<String> myStringBag = new Bag<String>(); 
+
+       myStringBag.add("nick0");
+       myStringBag.add("nick1");
+       myStringBag.add("nick2");
+       System.out.println(myStringBag);
+       myStringBag.removeItem("nick2");
+       System.out.println(myStringBag);
+       myStringBag.removeAt(0);
+       System.out.println(myStringBag);
+       myStringBag.clear();
     }
     
     public static void TestIntegerBag(){
