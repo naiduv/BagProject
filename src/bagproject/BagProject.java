@@ -20,12 +20,22 @@ public class BagProject {
         myBag.add("a");
         myBag.add("is");
         myBag.add("this");
+        System.out.println(myBag);
+                
+        myBag.removeItem("this");
+        
+        System.out.println("trying to remove this...\n");
+        System.out.println(myBag);
 
-        myBag.remove();
-        myBag.remove();
-        myBag.remove();
-        myBag.remove();
-        myBag.remove();
+        myBag.removeItem("test");
+        
+        System.out.println("trying to remove test...\n");
+        System.out.println(myBag);
+//        myBag.remove();
+//        myBag.remove();
+//        myBag.remove();
+//        myBag.remove();
+//        myBag.remove();
     }
     
     

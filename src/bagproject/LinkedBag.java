@@ -37,4 +37,39 @@ public class LinkedBag {
         }
     }
     
+    public void removeItem(String item){
+        Node iterator = firstNode;
+        Node previous = null;
+        boolean found = false;
+        
+        while(!found && iterator!=null){
+            if(iterator.data == item){
+                if(previous==null){
+                    //this handles the first node
+                    remove();
+                } else {
+                    previous.next = iterator.next;
+                    numberOfEntries--;  
+                }
+                
+                found = true;
+                //break;
+            }
+
+            previous = iterator;
+            iterator = iterator.next;   
+        }
+    }
+    
+    public String toString(){
+        Node iterator = firstNode;
+        String result = "";
+        while(iterator!=null){
+            result = result + "\n" + iterator.data;
+            iterator = iterator.next;   
+        }
+        
+        return result;
+    }
+    
 }

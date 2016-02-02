@@ -10,7 +10,7 @@ package bagproject;
  * @author vnaidu
  */
 public class Node {
-    private String data;
+    public String data;
     public Node next;
     
     public Node(String dataPortion){
