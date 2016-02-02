@@ -15,6 +15,10 @@ public class BagProject {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
+
+    }
+    
+    public static void TestLinkedBag(){
         LinkedBag myBag = new LinkedBag();    
         myBag.add("test");
         myBag.add("a");
@@ -31,18 +35,7 @@ public class BagProject {
         
         System.out.println("trying to remove test...\n");
         System.out.println(myBag);
-//        myBag.remove();
-//        myBag.remove();
-//        myBag.remove();
-//        myBag.remove();
-//        myBag.remove();
-    }
-    
-    
-    
-    
-    
-    
+    }  
     
     public static void TestStringBag(){
        Bag<String> myStringBag = new Bag<String>(); 
