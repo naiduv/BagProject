@@ -15,7 +15,20 @@ public class BagProject {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-
+        DoubleLinkedList list = new DoubleLinkedList();
+        list.add(10);
+        list.add(20);
+        list.add(30);
+        list.add(25);
+        list.add(1);        
+        list.removeItem(1);
+        list.removeItem(30);
+        list.removeItem(20);
+        
+        
+        System.out.println(list);
+        
+        
     }
     
     public static void TestLinkedBag(){
