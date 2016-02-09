@@ -23,8 +23,7 @@ public class BagProject {
         list.add(1);        
         list.removeItem(1);
         list.removeItem(30);
-        list.removeItem(20);
-        
+
         
         System.out.println(list);
         
